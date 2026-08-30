@@ -1,0 +1,17 @@
+name = "golf-schedule-watcher"
+main = "src/worker.ts"
+compatibility_date = "2026-08-01"
+
+# Cron runs are in UTC.
+# 11:00 UTC = 7:00 AM EDT (morning check before school)
+# 20:00 UTC = 4:00 PM EDT (afternoon check before practice)
+# Note: when DST ends in November these become 6 AM / 3 PM ET.
+# Adjust to [ "0 12,21 * * *" ] then if you care about the exact hour.
+[triggers]
+crons = ["0 11,20 * * *"]
+
+# Create with:  npx wrangler kv namespace create SCHEDULE_KV
+# then paste the generated id below.
+[[kv_namespaces]]
+binding = "SCHEDULE_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
