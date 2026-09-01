@@ -11,6 +11,25 @@ A single free-text entry from the coach's page, beginning with an `M/D` date and
 year — e.g. `9/2 Practice @ 12 Oaks 3:30-5:00`.
 _Avoid_: Event, entry, row
 
+**Match Section**:
+The region of the coach's page headed "Match Schedule (subject to change)", listing matches only.
+_Avoid_: Match schedule, summary block, top section
+
+**Full Section**:
+The region of the coach's page below the Match Section, listing practices, meetings and matches.
+Where the two Sections agree, its wording is the one parents are given.
+_Avoid_: Full schedule, detail block, bottom section
+
+**Restatement**:
+A Schedule Line that describes the same real event as a Schedule Line carrying the same date in the
+other Section. A Restatement exists whether or not the two agree.
+_Avoid_: Duplicate, near-duplicate, twin, echo
+
+**Contradiction**:
+A Restatement whose two Schedule Lines disagree about when or where the event happens. Additional
+detail in one Section — a roster, a ranking note — is not a Contradiction.
+_Avoid_: Conflict, mismatch, disagreement
+
 **Observed Schedule**:
 The set of Schedule Lines the page carried the last time it was read successfully.
 _Avoid_: Current schedule, stored schedule, state
